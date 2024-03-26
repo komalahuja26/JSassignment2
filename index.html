@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--title of the webpage..............--->
+    <title>Smoothie Maker</title>
+    <!--links to an external CSS file.....................-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--heading for the form..........-->
+    <h1>Custom Smoothie Order Form</h1>
+
+    <form id="smoothieForm">
+        <!-- The form for ordering a smoothie.......... -->
+
+        <!-- Section for choosing the base of the smoothie......... -->
+        <label for="base">Choose your base ($):</label>
+        <!-- This label is for the dropdown below......... -->
+        <select id="base" name="base">
+            <option value="Milk" data-price="1.00">Milk - $1.00</option>
+            <option value="Almond Milk" data-price="1.50">Almond Milk - $1.50</option>
+            <option value="Soy Milk" data-price="1.50">Soy Milk - $1.50</option>
+            <option value="Juice" data-price="1.20">Juice - $1.20</option>
+        </select><br>
+
+        <!-- Section for choosing fruits .........-->
+        <fieldset>
+            <legend>Choose your fruits ($0.50 each):</legend>
+            <label for="banana">Banana - $0.50</label>
+            <input type="checkbox" id="banana" name="fruit" value="Banana" data-price="0.50">
+           
+            <label for="strawberry">Strawberry - $0.50</label>
+            <input type="checkbox" id="strawberry" name="fruit" value="Strawberry" data-price="0.50">
+
+            <label for="blueberry">Blueberry - $0.50</label>
+            <input type="checkbox" id="blueberry" name="fruit" value="Blueberry" data-price="0.50">
+
+            <label for="mango">Mango - $0.50</label>
+            <input type="checkbox" id="mango" name="fruit" value="Mango" data-price="0.50">
+        </fieldset><br>
+
+        <!-- Section for choosing extras.......... -->
+        <label for="extras">Add extras :</label>
+        <select id="extras" name="extras" multiple>
+            <option value="Chia Seeds" data-price="0.70">Chia Seeds - $0.70</option>
+            <option value="Protein Powder" data-price="0.50">Protein Powder - $0.50</option>
+            <option value="Honey" data-price="0.65">Honey - $0.65</option>
+            <option value="Peanut Butter" data-price="0.75">Peanut Butter - $0.75</option>
+            <option value="Flaxseeds" data-price="0.40">Flaxseeds - $0.40</option>
+            <option value="Greek Yogurt" data-price="0.50">Greek Yogurt - $0.50</option>
+            <!-- This multi-select allows the user to choose one or more extras......... -->
+        </select><br>
+
+        <!-- Section for choosing toppings............. -->
+        <label for="toppings">Choose your toppings:</label>
+        <select id="toppings" name="toppings" multiple>
+            <option value="Granola" data-price="0.75">Granola - $0.75</option>
+            <option value="Coconut Flakes" data-price="0.85">Coconut Flakes - $0.85</option>
+            <option value="Cacao Nibs" data-price="0.65">Cacao Nibs - $0.65</option>
+            <option value="Almond Slices" data-price="0.50">Almond Slices - $0.50</option>
+            <option value="Berries" data-price="0.60">Berries - $0.60</option>
+            <option value="Honey Drizzle" data-price="0.30">Honey Drizzle - $0.30</option>
+        </select><br>
+
+        <!-- A button to submit the form and hence placing the order....... -->
+        <button type="button" id="orderBtn">Place Order</button>
+    </form>
+
+    <!-- This area will display the summary of the smoothie order......... -->
+    <div id="smoothieDescription"></div>
+
+    <!-- link to an external JavaScript file............. -->
+    <script src="script.js" defer></script>
+</body>
+</html>
