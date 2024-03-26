@@ -1,0 +1,72 @@
+/* General styles for the whole page............ */
+body {
+   
+    background-image: url('smoothie.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: grey; 
+}
+/* Style for the main heading........... */
+h1 {
+    color: red;
+    text-align: center;
+}
+/* Style for the form......... */
+form {
+    background:whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 150, 136, 0.15); 
+    max-width: 600px; 
+    margin: auto; 
+}
+/* Style for form elements........ */
+label, select, input, button {
+    display: block;
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+/* Style for dropdowns and checkboxes......... */
+select, input[type="checkbox"] {
+    padding: 8px; 
+    border: 2px solid cyan; 
+    border-radius: 4px; 
+    margin-top: 5px; 
+}
+/* Style for the button.......... */
+button {
+    background-color:goldenrod;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect...... */
+}
+/* Changes the button's background color when hovering over it.......... */
+button:hover {
+    background-color:silver;
+}
+
+#smoothieDescription {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: lightblue; 
+    border-left: 5px solid darkblue; 
+    font-weight: bold; 
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 640px) {
+    body {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px; /* Slightly smaller heading on small screens */
+    }
+}
